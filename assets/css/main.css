@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#footer {
+    background-image: url(../images/footer_bg.svg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center left;
+    /* background-size: 100%; */
+}
+
+.footer {
+    display: flex;
+    padding: 35px 0 25px;
+    min-height: 500px;
+}
+
+.footer-left {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.footer-left h2 {
+    font-size: 36px;
+    line-height: 1.29;
+    color: white;
+}
+
+.footer-left a {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer-left a::before {
+    content: "";
+    background: url('../images/atnali.svg');
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-right {
+    flex-grow: 5;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+}
+
+.cities ul {
+    display: flex;
+    list-style: none;
+}
+
+.cities ul li {
+    padding: 0 48px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.cities ul li.active a {
+    color: orange;
+}
+
+.cities ul li a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+    transition: 150ms color linear;
+}
+
+.cities ul li a:hover {
+    color: orange;
+}
+
+.cities ul li:first-child {
+    padding-left: 0;
+}
+
+.cities ul li:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.cities button {
+    height: 56px;
+    width: 208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 3px solid white;
+    background: transparent;
+    padding: 0 24px;
+    transition: 150ms border-color linear;
+    cursor: pointer;
+}
+
+.cities span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 56px;
+}
+
+.cities button img {
+    transition: 150ms transform linear;
+}
+
+.cities button:hover {
+    border-color: orange;
+}
+
+.cities button:hover > img {
+    transform: translateX(4px);
+}
+ 
+.cities button span {
+    color: white;
+}
+
+.address {
+    padding-top: 50px;
+    flex-grow: 1;
+}
+
+.address ul li div.address-title {
+    padding-bottom: 12px;
+}
+
+.address ul li div.address-content {
+    padding-bottom: 48px;
+}
+
+.address ul li div.address-title span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.address ul li div.address-content span, a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.54;
+    font-weight: 500;
+}
+
+.copyright {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
